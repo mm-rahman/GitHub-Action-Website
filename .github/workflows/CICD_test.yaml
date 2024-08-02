@@ -1,0 +1,19 @@
+name: Test Project
+on: push
+jobs: 
+  test: 
+    runs-on: ubuntu-latest
+    setps: 
+        - name: Get code
+          uses: actions/checkout@v4
+        - name: install NodeJS
+          uses: actions/setup-node@v4
+          with:
+            node-version: 19
+        - name: Install dependencies
+          run: npm cli
+        - name: Run tests
+          run: npm test
+          
+
+          
